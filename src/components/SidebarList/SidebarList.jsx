@@ -12,6 +12,7 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import logo from "../../assets/Logo.png"
 import VideoCameraFrontIcon from '@mui/icons-material/VideoCameraFront';
+import CoronavirusIcon from '@mui/icons-material/Coronavirus';
 import { useNavigate } from 'react-router-dom';
 
 const SidebarList = () => {
@@ -129,22 +130,22 @@ const SidebarList = () => {
               setSelected={setSelected}
             />
             <SidebarItem
-              title="Diseases"
+              title="Disease Diagnostics"
               to="/diseases"
-              icon={<ReceiptOutlinedIcon />}
+              icon={<CoronavirusIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <SidebarItem
-              title="World Camera"
+              title="Co-Pilot Eye"
               to="/camera"
-              icon={<TerrainOutlinedIcon />}
+              icon={<VideoCameraFrontIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <SidebarItem
-              title="Farmer Stories"
-              to="/knowyourfarmer"
+              title="Cow Doctor"
+              to="/knowyourcow"
               icon={<AgricultureIcon />}
               selected={selected}
               setSelected={setSelected}

@@ -1,0 +1,66 @@
+.img--cows {
+
+  border-radius: 20px;
+  width: 25%;
+
+}
+
+.container__openai{
+
+padding: 1rem;
+
+}
+.container--text {
+
+    padding: 1  rem;
+}
+
+.container--mcintosh{
+
+    display: flex;
+    flex-direction: row;
+
+}
+.container--logo {
+
+    width: 25%;
+
+}
+
+.container--picture {
+
+    width: 25%;
+    border-radius: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+  }
+  
+  /* Styling for individual cards */
+  .card {
+    width: 250px; 
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px; 
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s; 
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

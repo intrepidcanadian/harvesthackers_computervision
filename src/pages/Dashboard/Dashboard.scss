@@ -1,0 +1,46 @@
+.card-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+  }
+  
+.header--logo {
+
+height: 25rem;
+
+
+}
+
+.logocopilot--video {
+
+    border-radius: 20px;
+    height: 20rem;
+    margin: 2rem;
+}
+
+
+  /* Styling for individual cards */
+  .card {
+    width: 250px; 
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px; 
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s; 
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

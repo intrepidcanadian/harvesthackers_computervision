@@ -18,6 +18,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import CropCounter from "./pages/CropCounter/CropCounter"
 import Video from "./pages/Video/Video"
 import Diseases from "./pages/Diseases/Diseases";
+import CowDoctor from "./pages/CowDoctor/CowDoctor";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               <Route path="/crops" element={<CropCounter />}></Route>
               <Route path = "/camera" element={<Video />}></Route>
               <Route path = "/diseases" element={<Diseases />}></Route>
+              <Route path = "/knowyourcow" element={<CowDoctor />}></Route>
             </Routes>
           </main>
         </div>
