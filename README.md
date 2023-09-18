@@ -1,3 +1,18 @@
+**Introduction**
+
+Stayed up until 4 am to continuously work on this 1.5 day hackathon project - super excited to share my technical build of combining computer vision with AI in the agricultural sector!
+
+https://lnkd.in/gFcXpjMm
+
+This was a hackathon hosted in Whitby, Ontario (1855 Accelerator) where I used AI models and computer vision to count product inventory, identify diseases, and check on the health of a cow through its poop. I also leveraged video (instead of just photos) and showcased how AI intel could be combined with some of the existing technologies (QR code, location, timestamp, etc.) to quickly act upon information identified by AI or translate classification information (i.e. tomatoes) for supply chain transparency.
+
+This project was one of the winners so take a listen in the link above/video below!
+
+Thank you so much to the incredible contribution by volunteers, mentors, judges, and all stakeholders involved. I have to say that I felt blessed with the hospitality and sponsorship at this hackathon - we literally had mentors stopping by every few hours all the way into 11pm and volunteers on-site 24/7. Whitby's corporate community, local entrepreneurs, and the amazing hospitality really made us hackers feel welcome.
+
+With Whitby being the place where I grew up as a child, I am definitely excited to see more start-ups and tech firms grow there.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
