@@ -6,7 +6,7 @@ https://lnkd.in/gFcXpjMm
 
 This was a hackathon hosted in Whitby, Ontario (1855 Accelerator) where I used AI models and computer vision to count product inventory, identify diseases, and check on the health of a cow through its poop. I also leveraged video (instead of just photos) and showcased how AI intel could be combined with some of the existing technologies (QR code, location, timestamp, etc.) to quickly act upon information identified by AI or translate classification information (i.e. tomatoes) for supply chain transparency.
 
-This project was one of the winners so take a listen in the link above/video below!
+This project was one of the winners so take a listen in the link above!
 
 Thank you so much to the incredible contribution by volunteers, mentors, judges, and all stakeholders involved. I have to say that I felt blessed with the hospitality and sponsorship at this hackathon - we literally had mentors stopping by every few hours all the way into 11pm and volunteers on-site 24/7. Whitby's corporate community, local entrepreneurs, and the amazing hospitality really made us hackers feel welcome.
 
