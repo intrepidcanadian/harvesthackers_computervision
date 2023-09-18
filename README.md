@@ -2,7 +2,6 @@
 
 Stayed up until 4 am to continuously work on this 1.5 day hackathon project - super excited to share my technical build of combining computer vision with AI in the agricultural sector!
 
-https://lnkd.in/gFcXpjMm
 https://www.loom.com/share/49e311c386c54f9b827d5dec744037c2?sid=7cf3d69c-857a-4d29-989e-1479ed81cf09
 
 This was a hackathon hosted in Whitby, Ontario (1855 Accelerator) where I used AI models and computer vision to count product inventory, identify diseases, and check on the health of a cow through its poop. I also leveraged video (instead of just photos) and showcased how AI intel could be combined with some of the existing technologies (QR code, location, timestamp, etc.) to quickly act upon information identified by AI or translate classification information (i.e. tomatoes) for supply chain transparency.
