@@ -8,7 +8,7 @@ function CowDoctor() {
   const [imagePreview, setImagePreview] = useState(null);
   const [result, setResult] = useState(null);
   const [response, setResponse] = useState("");
-  const [OpenAIresponse, setOpenAIResponse] = useState("");
+  // const [OpenAIresponse, setOpenAIResponse] = useState("");
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -48,46 +48,14 @@ function CowDoctor() {
     }
   };
 
-  useEffect(() => {
-    if (result && result.top) {
-      OpenAIComponent().catch((error) => {
-        console.error("Error in OpenAIComponent:", error);
-      });
-    }
-  }, [result]);
+  // useEffect(() => {
+  //   if (result && result.top) {
+  //     OpenAIComponent().catch((error) => {
+  //       console.error("Error in OpenAIComponent:", error);
+  //     });
+  //   }
+  // }, [result]);
 
-  const OpenAIComponent = async () => {
-    const apiKey = "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"; // Replace with your key
-
-    const fullPrompt = "Based on cow health best practices, provide two pieces of advice on improving cow digestive health.";
-
-    
-
-    try {
-      const response2 = await axios.post(
-        "https://api.openai.com/v1/engines/davinci/completions",
-        {
-          prompt: fullPrompt,
-          max_tokens: 100,
-          temperature: 0.1
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-            "Content-Type": "application/json"
-          }
-        }
-      );
-      
-      console.log(response2)
-      // setOpenAIResponse(response2.data);
-     
-    
-    } catch (error) {
-      console.error("Error with OpenAI request:", error);
-      throw error;
-    }
-  };
 
   const handleUpload = async () => {
     if (!selectedFile) {

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Diseases.scss";
 import qrcode from "../../assets/qrcode.png";
+const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+const roboflowApiKey = process.env.REACT_APP_ROBOFLOW_API_KEY;
 
 
 
@@ -77,23 +79,10 @@ function Diseases() {
   };
 
 
-//   const sendMessage = async (aiResponseText) => {
-//     try {
-//       const response = await axios.post('http://localhost:8080/api/sendText', {
-//         aiResponseText: aiResponseText
-//       });
-//       console.log("Message sent successfully:", response.data);
-//     } catch (error) {
-//       console.error("Error sending message:", error);
-//     }
-//   };
-
-
   const OpenAIComponent = async (predictions) => {
      
-    const apiKey = "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"; // Replace with your key
-    const classData = countClasses(predictions); // Get the disease counts
-    const diseasesList = Object.keys(classData).join(", "); // Creates a list: Disease1, Disease2, ...
+    const classData = countClasses(predictions); 
+    const diseasesList = Object.keys(classData).join(", ");
     
     const fullPrompt = `List ways farmers deal with ${diseasesList}`;
 

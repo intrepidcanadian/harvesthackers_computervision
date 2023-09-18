@@ -14,7 +14,6 @@ function Dashboard() {
     return (
       <div>
         <video className = "logocopilot--video" src={logocopilotvideo} autoPlay muted loop></video>
-        {/* <h1>Harvest Co-Pilot</h1> */}
 
         <div className="card-container">
           <Link to="/crops" className="card">

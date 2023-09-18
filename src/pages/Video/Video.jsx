@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+const apikey = process.env.REACT_APP_API_KEY
+
 function Video() {
     const [model, setModel] = useState(null);
     const [predictions, setPredictions] = useState([]);
@@ -16,7 +18,7 @@ function Video() {
         }
 
         window.roboflow.auth({
-            publishable_key: "rf_5XwP6b3QJgXLOmoTyAWNzvCV66h2"
+            publishable_key: apikey
         }).load({
             model: "strawberry_counting",
             version: 1
