@@ -3,6 +3,8 @@ import axios from "axios";
 import "./Diseases.scss";
 import qrcode from "../../assets/qrcode.png";
 
+
+
 function Diseases() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [imagePreview, setImagePreview] = useState(null); // State to store image preview URL
@@ -75,6 +77,18 @@ function Diseases() {
   };
 
 
+//   const sendMessage = async (aiResponseText) => {
+//     try {
+//       const response = await axios.post('http://localhost:8080/api/sendText', {
+//         aiResponseText: aiResponseText
+//       });
+//       console.log("Message sent successfully:", response.data);
+//     } catch (error) {
+//       console.error("Error sending message:", error);
+//     }
+//   };
+
+
   const OpenAIComponent = async (predictions) => {
      
     const apiKey = "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"; // Replace with your key
@@ -103,6 +117,7 @@ function Diseases() {
       console.log(response2);
     //   const aiResponseText = response2.data.choices[0].text;
     setAiResponseText(response2.data.choices[0].text);
+    // sendMessage(response2.data.choices[0].text);
 
     } catch (error) {
       console.error("Error with OpenAI request:", error);
@@ -112,6 +127,8 @@ function Diseases() {
 
 
   async function fetchTomatoDisease(imageBase64) {
+
+
     try {
       const response = await axios({
         method: "POST",
@@ -132,6 +149,7 @@ function Diseases() {
       if (response.data.predictions) {
         OpenAIComponent(response.data.predictions);
       }
+    
 
     } catch (error) {
       // Handle errors here
